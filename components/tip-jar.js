@@ -63,11 +63,12 @@ export default function TipJar() {
                 step=".01"
               />
               <div className="pr-2">
-                <a href="https://1291163509952.gumroad.com/coffee">
-                  <FunkyButton customClass={"w-full bg-pink-400 text-black"}>
-                    Buy me a coffee
-                  </FunkyButton>
-                </a>
+                <FunkyButton
+                  customClass={"w-full bg-pink-400 text-black"}
+                  href={"https://1291163509952.gumroad.com/coffee"}
+                >
+                  Buy me a coffee
+                </FunkyButton>
               </div>
             </form>
           </div>

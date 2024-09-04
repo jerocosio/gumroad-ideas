@@ -6,7 +6,7 @@ import TipJar from "@/components/tip-jar";
 export default function Home() {
   return (
     <main className=" container mx-auto max-w-3xl">
-      <article class="prose prose-invert">
+      <article className="prose prose-invert">
         <section>
           <h2>CONTENTS</h2>
           <ul>
