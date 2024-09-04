@@ -1,15 +1,7 @@
-"use client";
-
 import FunkyButton from "@/components/funky-button";
+import LoginForm from "@/components/login-form";
 
 export default function SignUp({}) {
-  const lastUsed = localStorage.getItem("lastUsed");
-
-  //Set the last used button to the last used button
-  const setLastUsed = (buttonTag) => {
-    localStorage.setItem("lastUsed", buttonTag);
-    alert("Reload the page to see the last used text");
-  };
   return (
     <main className="flex">
       <div className="flex-1 p-12">
@@ -21,112 +13,74 @@ export default function SignUp({}) {
             Log in
           </a>
         </div>
-        <div className=" mt-20 w-full flex flex-col space-y-2">
-          <div>
-            <FunkyButton
-              customClass={
-                "w-full bg-white group-hover:bg-google-plus text-black group-hover:shadow-[4px_4px_0_0_rgb(0,0,0)]"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setLastUsed("google");
-              }}
-            >
-              <div className="flex justify-between items-center">
-                <div>Sign in with Google</div>
-                <img
-                  src="https://www.vectorlogo.zone/logos/google/google-icon.svg"
-                  className=" size-6 m-0"
-                />
-              </div>
-            </FunkyButton>
-            {lastUsed === "google" && (
-              <div className="text-sm text-gray-500 ml-3 my-1">
-                Last used ☝️
-              </div>
-            )}
-          </div>
-          <div>
-            <FunkyButton
-              customClass={
-                "w-full bg-white group-hover:bg-google-plus text-black group-hover:shadow-[4px_4px_0_0_rgb(0,0,0)]"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setLastUsed("facebook");
-              }}
-            >
-              <div className="flex justify-between items-center">
-                <div>Continue with Facebook</div>
-                <img
-                  src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg"
-                  className=" size-6 m-0"
-                />
-              </div>
-            </FunkyButton>
-            {lastUsed === "facebook" && (
-              <div className="text-sm text-gray-500 ml-3 my-1">
-                Last used ☝️
-              </div>
-            )}
-          </div>
-          <div>
-            <FunkyButton
-              customClass={
-                "w-full bg-white group-hover:bg-google-plus text-black group-hover:shadow-[4px_4px_0_0_rgb(0,0,0)]"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setLastUsed("x");
-              }}
-            >
-              <div className="flex justify-between items-center">
-                <div>Sign in with X</div>
-                <img
-                  src="https://www.vectorlogo.zone/logos/x/x-icon.svg"
-                  className=" size-6 m-0"
-                />
-              </div>
-            </FunkyButton>
-            {lastUsed === "x" && (
-              <div className="text-sm text-gray-500 ml-3 my-1">
-                Last used ☝️
-              </div>
-            )}
-          </div>
-          <div>
-            <FunkyButton
-              customClass={
-                "w-full bg-white group-hover:bg-google-plus text-black group-hover:shadow-[4px_4px_0_0_rgb(0,0,0)]"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setLastUsed("stripe");
-              }}
-            >
-              <div className="flex justify-between items-center">
-                <div>Sign in to Stripe</div>
-                <img
-                  src="https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg"
-                  className=" size-6 m-0"
-                />
-              </div>
-            </FunkyButton>
-            {lastUsed === "stripe" && (
-              <div className="text-sm text-gray-500 ml-3 my-1">
-                Last used ☝️
-              </div>
-            )}
-          </div>
-        </div>
+        <LoginForm />
         <div class="relative flex py-5 items-center w-full">
           <div class="flex-grow border-t border-gray-300"></div>
           <span class="flex-shrink mx-4 text-gray-300">or</span>
           <div class="flex-grow border-t border-gray-300"></div>
         </div>
+        <div className="">
+          <label className="text-gray-500 mb-6">Email</label>
+          <input
+            type="text"
+            placeholder=""
+            className="w-full mb-4 bg-black border border-gray-600 rounded-sm focus:outline-pink-400 outline-pink-400 px-4 py-2"
+          />
+          <label className="text-gray-500 mb-6">Password</label>
+          <input
+            type="password"
+            placeholder=""
+            className="w-full bg-black border border-gray-600 rounded-sm focus:outline-pink-400 outline-pink-400 px-4 py-2"
+          />
+          <FunkyButton customClass="w-full bg-pink-400 text-black mt-8">
+            Create account
+          </FunkyButton>
+        </div>
       </div>
       <div className="flex-1">
-        <img src="https://assets.gumroad.com/packs/static/822e112a3b444c69f7ef.png" />
+        <div className=" p-12">
+          <div className=" bg-white text-black rounded-sm p-6 shadow-[4px_4px_0_0_rgb(0,0,0)]">
+            <p className="text-3xl">
+              Join over <strong>186,832</strong> creators who have earned over
+              <strong> $1,009,801,055</strong> on Gumroad selling digital
+              products and memberships.
+            </p>
+            <p className="text-gray-500 mt-4 text-center">
+              "Thanks to Gumroad, I was able to launch my product in minutes!" -{" "}
+              <a
+                className="underline hover:text-gray-700"
+                href="https://luisfurushio.gumroad.com/?recommended_by=staff_picks&_gl=1*1ygf57g*_ga*MTQzMjE2NzIwMC4xNzI1NDEwNzI4*_ga_6LJN6D94N6*MTcyNTQxNDYzNC4yLjAuMTcyNTQxNDYzNC4wLjAuMA.."
+              >
+                {" "}
+                Luis Furushio, Digital Creator
+              </a>
+            </p>
+            <div>
+              <div class="flex -space-x-4 rtl:space-x-reverse">
+                {
+                  //Create an array and map over it
+                  Array.from({ length: 10 }).map((_, i) => (
+                    <img
+                      class="size-12 border-2 border-white rounded-full dark:border-gray-800"
+                      src={`https://loremflickr.com/200/200?random=${i}`}
+                      alt=""
+                    />
+                  ))
+                }
+                <a
+                  class="flex items-center justify-center size-12 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
+                  href="#"
+                >
+                  +180k
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <img
+          className="absolute top-0 bottom-0 h-full w-full object-cover"
+          src="https://assets.gumroad.com/packs/static/822e112a3b444c69f7ef.png"
+        /> */}
       </div>
     </main>
   );
