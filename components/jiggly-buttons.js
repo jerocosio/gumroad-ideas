@@ -21,9 +21,8 @@ export default function JigglyButtons() {
         </p>
         <ul>
           <li>
-            Make the transitions smoother by simply making the actual
-            button/link bigger than the moving squares and adding padding over
-            it.
+            Make the transitions smoother by making the actual button/link
+            bigger than the moving 'buttons' and add some padding over it.
           </li>
         </ul>
         <div className="my-6">
