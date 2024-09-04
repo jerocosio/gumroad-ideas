@@ -2,7 +2,7 @@
 
 import FunkyButton from "./funky-button";
 
-export default function MediumImprovements() {
+export default function LastLogin() {
   //Read the last used button from local storage
   const lastUsed = localStorage.getItem("lastUsed");
 

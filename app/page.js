@@ -1,5 +1,7 @@
-import MediumImprovements from "@/components/medium-improvements";
-import SmallImprovements from "@/components/small-improvements";
+import JigglyButtons from "@/components/jiggly-buttons";
+import LandingNavigation from "@/components/landing-navigation";
+import LastLogin from "@/components/last-login";
+import TipJar from "@/components/tip-jar";
 
 export default function Home() {
   return (
@@ -9,13 +11,16 @@ export default function Home() {
           <h2>CONTENTS</h2>
           <ul>
             <li>About me</li>
-            <li>Small ideas</li>
-            <li>Medium ideas</li>
-            <li>Other ideas</li>
+            <li>Why Gumroad?</li>
+            <li>Landing navigation</li>
+            <li>Last login</li>
+            <li>Tip Jar</li>
           </ul>
         </section>
-        <SmallImprovements />
-        <MediumImprovements />
+        <JigglyButtons />
+        <LandingNavigation />
+        <LastLogin />
+        <TipJar />
       </article>
     </main>
   );
