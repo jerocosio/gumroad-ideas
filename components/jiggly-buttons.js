@@ -7,6 +7,7 @@ export default function JigglyButtons() {
       <div>
         <p>
           Improve the jittering of some of the buttons found throughout Gumroad
+          when hovering over the borders.
         </p>
         <p>
           <strong>Problem:</strong>
@@ -22,7 +23,8 @@ export default function JigglyButtons() {
         <ul>
           <li>
             Make the transitions smoother by making the actual button/link
-            bigger than the moving 'buttons' and add some padding over it.
+            bigger by adding some padding, and creating new rectangles/buttons
+            that actually animate.
           </li>
         </ul>
         <div className="my-6">

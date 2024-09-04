@@ -9,20 +9,61 @@ export default function TipJar() {
   const [showModal, setShowModal] = useState(false);
   return (
     <section>
-      <h2 className="text-2xl">Tip jar</h2>
+      <h2 id="tip_jar">Tipping Jar</h2>
       <p>
-        If you like my work, you can support me by buying me a coffee. I will
-        use the money to pay for my hosting and domain costs.
+        As a way to expand the current widgets available, I belive that creating
+        a simple widget that could be added to the creators websites would be an
+        amazing way for them to start receiving tips easily.
       </p>
+      <p>
+        <strong>Problem:</strong>
+      </p>
+      <ul>
+        <li>
+          <p>
+            Creators want to be able to receive tips/donations right from their
+            website.
+          </p>
+        </li>
+        <li>
+          <p>
+            Currently the only widgets need to be all overlay or an embed, but
+            there's no easy way to add it to all your site.
+          </p>
+        </li>
+      </ul>
+      <p>
+        <strong>Solution:</strong>
+      </p>
+      <ul>
+        <li>
+          Create a simple widget that can be embedded into the creators website.
+        </li>
+        <li>
+          This could be a simple button that opens a modal with a form to input
+          the amount, and then redirect the users to a page where we recieve the
+          amout as a parameter, and all ready to complete the payment.
+        </li>
+        <li>
+          It could be extended to many web platforms like Wordpress, Shopify,
+          React, etc.
+        </li>
+      </ul>
+
       <button
         onClick={() => {
           setShowTip(!showTip);
           setShowModal(false);
         }}
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+        className="group ease-in-out py-5 px-2"
       >
-        {showTip ? "Hide" : "Show"} tip jar
+        <div
+          className={`bg-white group-hover:shadow-[4px_4px_0_0_rgb(0,0,0)] transition duration-200 font-light text-black rounded-sm px-4 py-3 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:bg-pink-400`}
+        >
+          {showTip ? "Hide" : "Show"} tipping jar
+        </div>
       </button>
+
       {showTip && (
         <div className="fixed right-0 bottom-0 size-20 flex items-center justify-center group">
           {!showModal && (
@@ -67,7 +108,7 @@ export default function TipJar() {
                   customClass={"w-full bg-pink-400 text-black"}
                   href={"https://1291163509952.gumroad.com/coffee"}
                 >
-                  Buy me a coffee
+                  Offer me a tip
                 </FunkyButton>
               </div>
             </form>

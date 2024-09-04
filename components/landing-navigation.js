@@ -84,17 +84,17 @@ export default function LandingNavigation() {
         </p>
         <ul>
           <li>
-            If a user wants to see the current sub-menu items of the nav it
-            needs to click on the buttons to see them.
+            If a user wants to see the sub-menu items of the nav it needs to
+            click on them.
           </li>
           <li>
-            This causes some weird interactions, for example if the users wnats
+            This causes some weird interactions, for example if the users wants
             to see sub-menu items on the bottom of the nav, the buttons will
-            move to the top of the nav.
+            move to the top of the nav after clicking on it.
           </li>
           <li>
             If a user wants to quickly go back and forth between the menu and
-            sub-menu items, they need to click way too many buttons.
+            sub-menu items, they need to click way too many times.
           </li>
           <li>
             As some of the menus are too tall, users need to scroll to see all
@@ -113,9 +113,8 @@ export default function LandingNavigation() {
             are visible above the fold.
           </li>
           <li>
-            The top item of the categories is a little irrelevant ("All
-            Design"), as the user could already acces those items by clicking in
-            the top button of each category.
+            The top item on the categories irrelevant ("All Design"), as the
+            user could already acces them by clicking in the top button.
           </li>
         </ul>
         <div className="my-6">
