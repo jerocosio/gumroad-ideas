@@ -1,5 +1,3 @@
-import FunkyButton from "./funky-button";
-
 export default function LandingNavigation() {
   const menuOptions = [
     {
@@ -75,7 +73,10 @@ export default function LandingNavigation() {
                   <>
                     <div className="bg-indigo-400 text-white shadow-[4px_4px_0_0_rgb(255,255,255)] w-52 text-left rounded-sm hidden group-hover:block absolute top-0 -right-52">
                       {option.subMenu.map((subOption) => (
-                        <button className="hover:bg-white font-light text-left text-black px-4 underline py-3 w-full flex justify-between">
+                        <button
+                          key={option.text}
+                          className="hover:bg-white font-light text-left text-black px-4 underline py-3 w-full flex justify-between"
+                        >
                           {subOption.text}
                         </button>
                       ))}
