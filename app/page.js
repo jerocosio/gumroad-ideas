@@ -8,7 +8,7 @@ import FunkyButton from "@/components/funky-button";
 export default function Home() {
   return (
     <main className=" container mx-auto max-w-3xl">
-      <article className="prose prose-invert">
+      <article className="prose prose-invert hover:prose-a:text-pink-400">
         <section>
           <h2>CONTENTS</h2>
           <ul>
@@ -154,7 +154,7 @@ export default function Home() {
           <FunkyButton href="/signup">Visit revisited signup</FunkyButton>
         </section>
         <hr className=" border-pink-400" />
-        <section>
+        <section className=" mb-16">
           If you want to learn more about the code for this site you can visit
           the repository on{" "}
           <a href="https://github.com/jerocosio/gumroad-ideas">Github</a>, this
