@@ -10,14 +10,59 @@ export default function Home() {
         <section>
           <h2>CONTENTS</h2>
           <ul>
-            <li>About me</li>
-            <li>Why Gumroad?</li>
-            <li>Jiggly buttons</li>
+            <li>
+              <a href="#about_me">About me</a>
+            </li>
+            <li>
+              <a href="#why_gumroad">Why Gumroad?</a>
+            </li>
+            <li>
+              <a href="#jiggly">Jiggly buttons</a>
+            </li>
             <li>Landing navigation</li>
             <li>Last login</li>
             <li>Tip Jar</li>
-            <li>Revamped sign up</li>
+            <li>Revamped signup</li>
           </ul>
+        </section>
+        <section id="why_gumroad">
+          <h2>Why Gumroad?</h2>
+          <div>
+            <p>
+              I discovered Gumroad for the first time a couple of years ago,
+              when I bought a technical interview process course, and since then
+              I've been really impressed in the product, the business model, the
+              management style, and of course the openess of the whole thing.
+              That's why when I saw the campaign on Republic I even made a small
+              investment ($400), but I've seen it evolve over the years and the
+              speed tha things seem to move there really is something I can get
+              behind. Also, I've always said that the best technology products
+              are the ones that help other people make money online, which is
+              basically what Gumroad does.
+            </p>
+          </div>
+        </section>
+        <section id="about_me">
+          <h2>About me</h2>
+          <div>
+            <p>
+              I'm Jero from Mexico City, an engineer that loves to code and has
+              been working in tech for the past 10 years, in both big and small
+              companies. I'm currently working as a partner manager at Apple in
+              the Worldwide Developer relations team helping devs create the
+              best version of their apps. I also have experience in development,
+              product management, operations, and I've been an entrepreneur
+              myself. If you want to check out my whole CV, visit my public{" "}
+              <a href="https://www.micv.co/cv/jeronimo-cosio-dukkr">cv here</a>,
+              published on micv.co, my most recent product launched.
+            </p>
+            <p>
+              But enough about me, here I wanted to show some improvements I
+              though of in the past couple of days while browsing Gumroad that
+              I'm sure would improve the CX for the creators as well as improve
+              their GMV.
+            </p>
+          </div>
         </section>
         <JigglyButtons />
         <LandingNavigation />
