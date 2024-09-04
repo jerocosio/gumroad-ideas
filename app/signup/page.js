@@ -5,12 +5,15 @@ export default function SignUp({}) {
   return (
     <main className="flex">
       <div className="flex-1 p-12">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-8 ">
           <a href="#">
             <img class="fill-blue-500 text-pink-500" src="/logo.svg" />
           </a>
-          <a href="#" className="underline font-light">
-            Log in
+          <a
+            href="#"
+            className="underline font-light text-sm text-gray-300 hover:text-gray-500"
+          >
+            Already have an account? Log in
           </a>
         </div>
         <LoginForm />
@@ -45,8 +48,9 @@ export default function SignUp({}) {
               <strong> $1,009,801,055</strong> on Gumroad selling digital
               products and memberships.
             </p>
-            <p className="text-gray-500 mt-4 text-center">
-              "Thanks to Gumroad, I was able to launch my product in minutes!" -{" "}
+            <p className="text-lg text-gray-800 mt-4 text-center">
+              "Thanks to Gumroad, I was able to launch my product in minutes!
+              Now I have more than 20 products." -{" "}
               <a
                 className="underline hover:text-gray-700"
                 href="https://luisfurushio.gumroad.com/?recommended_by=staff_picks&_gl=1*1ygf57g*_ga*MTQzMjE2NzIwMC4xNzI1NDEwNzI4*_ga_6LJN6D94N6*MTcyNTQxNDYzNC4yLjAuMTcyNTQxNDYzNC4wLjAuMA.."
@@ -55,8 +59,11 @@ export default function SignUp({}) {
                 Luis Furushio, Digital Creator
               </a>
             </p>
-            <div>
-              <div class="flex -space-x-4 rtl:space-x-reverse">
+            <div className="mt-4 flex items-center">
+              <p className="text-gray-500 w-40 text-sm ">
+                Join Luis and +180,000 other creators now
+              </p>
+              <div class="flex -space-x-4 ">
                 {
                   //Create an array and map over it
                   Array.from({ length: 10 }).map((_, i) => (

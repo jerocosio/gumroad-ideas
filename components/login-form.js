@@ -12,7 +12,7 @@ export default function LoginForm() {
     alert("Reload the page to see the last used text");
   };
   return (
-    <div className=" mt-16 w-full flex flex-col space-y-2">
+    <div className="w-full flex flex-col space-y-2">
       <div>
         <FunkyButton
           customClass={
