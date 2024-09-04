@@ -12,9 +12,11 @@ export default function Home() {
           <ul>
             <li>About me</li>
             <li>Why Gumroad?</li>
+            <li>Jiggly buttons</li>
             <li>Landing navigation</li>
             <li>Last login</li>
             <li>Tip Jar</li>
+            <li>Revamped sign up</li>
           </ul>
         </section>
         <JigglyButtons />
