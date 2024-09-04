@@ -88,10 +88,6 @@ export default function SignUp({}) {
             </div>
           </div>
         </div>
-        {/* <img
-          className="absolute top-0 bottom-0 h-full w-full object-cover"
-          src="https://assets.gumroad.com/packs/static/822e112a3b444c69f7ef.png"
-        /> */}
       </div>
     </main>
   );

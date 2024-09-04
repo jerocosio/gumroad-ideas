@@ -5,8 +5,8 @@ import { useState } from "react";
 import FunkyButton from "./funky-button";
 
 export default function TipJar() {
-  const [showTip, setShowTip] = useState(true);
-  const [showModal, setShowModal] = useState(true);
+  const [showTip, setShowTip] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     <section>
       <h2 className="text-2xl">Tip jar</h2>

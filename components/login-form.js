@@ -1,13 +1,17 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import FunkyButton from "./funky-button";
 
 export default function LoginForm() {
-  //Read the last used button from local storage
-  const lastUsed = localStorage.getItem("lastUsed") || "";
+  const [lastUsed, setLastUsed] = useState("");
+
+  useEffect(() => {
+    setLastUsed(localStorage.getItem("lastUsed") || "");
+  }, []);
 
   //Set the last used button to the last used button
-  const setLastUsed = (buttonTag) => {
+  const updateLastUsed = (buttonTag) => {
     localStorage.setItem("lastUsed", buttonTag);
     alert("Reload the page to see the last used text");
   };
@@ -20,7 +24,7 @@ export default function LoginForm() {
           }
           onClick={(e) => {
             e.preventDefault();
-            setLastUsed("google");
+            updateLastUsed("google");
           }}
         >
           <div className="flex justify-between items-center">
@@ -42,7 +46,7 @@ export default function LoginForm() {
           }
           onClick={(e) => {
             e.preventDefault();
-            setLastUsed("facebook");
+            updateLastUsed("facebook");
           }}
         >
           <div className="flex justify-between items-center">
@@ -64,7 +68,7 @@ export default function LoginForm() {
           }
           onClick={(e) => {
             e.preventDefault();
-            setLastUsed("x");
+            updateLastUsed("x");
           }}
         >
           <div className="flex justify-between items-center">
@@ -86,7 +90,7 @@ export default function LoginForm() {
           }
           onClick={(e) => {
             e.preventDefault();
-            setLastUsed("stripe");
+            updateLastUsed("stripe");
           }}
         >
           <div className="flex justify-between items-center">
